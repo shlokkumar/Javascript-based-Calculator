@@ -1,0 +1,261 @@
+<html>
+  <head>
+    <title>My Calculator</title>
+    <style>
+      .button {
+        border: none;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        /* display: inline-block; */
+        font-size: 24px;
+        margin: 4px 4px;
+      }
+
+      .button1 {
+        width: 60px;
+      }
+
+      .button2 {
+        width: 99%;
+      }
+
+      .button3 {
+        width: 99%;
+      }
+    </style>
+  </head>
+
+  <body style="background-color: cadetblue">
+    <form name="calc" id="calc" class="calc">
+      <center>
+        <h1>Calculator</h1>
+        <strong> Expression</strong>
+        <input
+          type="text"
+          id="expression"
+          name="expression"
+          readonly
+          size="28px"
+          style="text-align:center;"
+        /><br />
+        <strong> Result</strong>
+        <input
+          type="text"
+          id="result"
+          name="result"
+          readonly
+          size="28px"
+          value="0"
+          style="text-align:center;"
+        /><br />
+        <table style="width: 160px">
+          <tr>
+            <th>
+              <button
+                class="button button1"
+                type="button"
+                onclick="backCalc(this.id)"
+                id="1"
+              >
+                1
+              </button>
+            </th>
+            <th>
+              <button
+                class="button button1"
+                type="button"
+                onclick="backCalc(this.id)"
+                id="2"
+              >
+                2
+              </button>
+            </th>
+            <th>
+              <button
+                class="button button1"
+                type="button"
+                onclick="backCalc(this.id)"
+                id="3"
+              >
+                3
+              </button>
+            </th>
+            <th>
+              <button
+                class="button button1"
+                type="button"
+                onclick="operCalc(this.id)"
+                id="+"
+              >
+                +
+              </button>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <button
+                class="button button1"
+                type="button"
+                onclick="backCalc(this.id)"
+                id="4"
+              >
+                4
+              </button>
+            </th>
+            <th>
+              <button
+                class="button button1"
+                type="button"
+                onclick="backCalc(this.id)"
+                id="5"
+              >
+                5
+              </button>
+            </th>
+            <th>
+              <button
+                class="button button1"
+                type="button"
+                onclick="backCalc(this.id)"
+                id="6"
+              >
+                6
+              </button>
+            </th>
+            <th>
+              <button
+                class="button button1"
+                type="button"
+                onclick="operCalc(this.id)"
+                id="-"
+              >
+                -
+              </button>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <button
+                class="button button1"
+                type="button"
+                onclick="backCalc(this.id)"
+                id="7"
+              >
+                7
+              </button>
+            </th>
+            <th>
+              <button
+                class="button button1"
+                type="button"
+                onclick="backCalc(this.id)"
+                id="8"
+              >
+                8
+              </button>
+            </th>
+            <th>
+              <button
+                class="button button1"
+                type="button"
+                onclick="backCalc(this.id)"
+                id="9"
+              >
+                9
+              </button>
+            </th>
+            <th>
+              <button
+                class="button button1"
+                type="button"
+                onclick="operCalc(this.id)"
+                id="*"
+              >
+                *
+              </button>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <button
+                class="button button1"
+                type="button"
+                onclick="backCalc(this.id)"
+                id="0"
+              >
+                0
+              </button>
+            </th>
+            <th>
+              <button
+                class="button button1"
+                type="button"
+                onclick="backCalc(this.id)"
+                id="00"
+              >
+                00
+              </button>
+            </th>
+            <th>
+              <button
+                class="button button1"
+                type="button"
+                onclick="backCalc(this.id)"
+                id="."
+              >
+                .
+              </button>
+            </th>
+            <th>
+              <button
+                class="button button1"
+                type="button"
+                onclick="operCalc(this.id)"
+                id="/"
+              >
+                /
+              </button>
+            </th>
+          </tr>
+          <tr>
+            <th colspan="4">
+              <button
+                class="button button2"
+                type="button"
+                onclick="performCalc(this.id)"
+                id="="
+              >
+                =
+              </button>
+            </th>
+          </tr>
+          <tr>
+            <th colspan="2">
+              <button
+                class="button button2"
+                type="button"
+                onclick="clearCalc(this.id)"
+                id="C"
+              >
+                C
+              </button>
+            </th>
+            <th colspan="2">
+              <button
+                class="button button2"
+                type="button"
+                onclick="clearCalc(this.id)"
+                id="CE"
+              >
+                CE
+              </button>
+            </th>
+          </tr>
+        </table>
+      </center>
+    </form>
+
+    <script type="text/javascript" src="backend.js"></script>
+  </body>
+</html>
